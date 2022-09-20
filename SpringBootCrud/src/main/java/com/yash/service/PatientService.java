@@ -2,15 +2,18 @@ package com.yash.service;
 
 import java.util.List;
 
-import com.yash.entity.patient;
+import com.yash.entity.Patient;
 
 public interface PatientService {
-	public patient addPatient(patient p);
+	public Patient addPatient(Patient p);
 
-	public List<patient> findAll();
+	public List<Patient> findAll();
 
-	public patient findById(int pid);
+	public Patient findById(int pid);
 
-	public patient updatepat(patient p, int pid);
+	public Patient updatepat(Patient p, int pid);
+
+	public String deletePatient(int pid);
+
 
 }
